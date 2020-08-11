@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Covid-19 Statistics Singapore</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Singapore's Covid-19 cases">
+		<meta name="author" content="Saransh Malik">
+		<link rel="stylesheet" type="text/css" href="assets/styles.css">
+		<link rel="icon" type="image/png" href="assets/favicon.png"/>
+		
+	</head>
+
+	<body>
+
+		<div id="static">
+
+			<header>
+				<div id="inline-title">
+					<h1>Covid-19 Singapore</h1>
+					<p id="info">This is an interactive tool that helps visualise the cases of Covid-19 in Singapore</p>
+				</div>
+			</header>
+
+			<main>
+				<iframe src="export.html" title="Data visualisation"></iframe>
+			</main>
+
+		</div>
+
+		<div id="more-info">
+			<a href="#footer">
+				<p>Scroll for info</p>
+				<img src="assets/arrow.png" alt="scroll arrow">
+			</a>
+		</div>
+
+		<footer id="footer">
+			<h2>Community Cases</h2>
+			<p>Community cases are measured as declared by the Government of Singapore - cases in the un-isolated community in Singapore</p>
+			<p>These do not include imported cases, as well as cases in isolated dormitories</p>
+			
+			<h2>Graphs explained</h2>
+			<p>The top two graphs simply indicate the total cases and new cases per day in Singapore</p>
+			<p>Hovering over or interacting with the graphs allows you to see only community cases, or total cases</p>
+			<p>The bottom two graphs indicate the new cases on a day, compared to the total cases till that day, which can be used to measure the exponential nature of the virus</p>
+			<p>Having the those graphs be in the shape of a straight line indicates exponential growth, which means being below the line indicates the curve being flattened</p>
+			<p>The straight lines used are ones that were fitted at the beggining of the pandemic in Singapore, and hence show the improvements since then </p>
+		</footer>
+
+	</body>
+
+</html>

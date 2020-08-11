@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Saransh Malik</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Saransh Malik's programming portfolio">
+		<meta name="author" content="Saransh Malik">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="assets/styles.css">
+
+	</head>
+
+	<body id="main-body">
+
+		<nav>
+			<a href="#experience">Experience</a>
+			<a href="#portfolio">Portfolio</a>
+			<a href="#contact">Contact</a>
+		</nav>
+
+		<menu>
+			<button onclick="animate_func(this)" id="animbutton">
+				<hr id="bar1">
+				<hr id="bar2">
+				<hr id="bar3">
+			</button>
+			<script>
+				function animate_func() {
+					document.getElementById('over-menu').classList.toggle("show-change");
+					document.getElementById('main-body').classList.toggle("flow-body");
+					document.getElementById('animbutton').classList.toggle("change");
+				}
+			</script>
+		</menu>
+
+		<menu id="over-menu">
+			<a href="#experience" onclick="animate_func()">Experience</a>
+			<a href="#portfolio" onclick="animate_func()">Portfolio</a>
+			<a href="#contact" onclick="animate_func()">Contact</a>
+		</menu>
+
+		<main>
+			<header id="top-page">
+				<div id="intro">
+					<h1>Hello</h1>
+					<h2>My name is <strong>Saransh Malik</strong><br/>This is my programming portfolio</h2>
+				</div>
+			</header>
+
+			<div id="more-info">
+				<a href="#experience">
+					<p>Scroll for info</p>
+					<img src="assets/arrow.png" alt="scroll arrow" id="arrow1">
+				</a>
+			</div>
+
+			<div class="sect" id="experience">
+				<h2>Programming experience</h2>
+				<div id="languages">
+					<div id="top">
+						<section>
+							<h3>Python</h3>
+							<p>I have been learning Python for 5 years, and have been making apps (focusing on scientific programming) for 2 years</p>
+							<img src="assets/python.png">
+						</section>
+						<section>
+							<h3>HTML / CSS / Javascript</h3>
+							<p>My latest addition to my programming experience has been front-end web development, which I have been studying for a year</p>
+							<img src="assets/html.png">
+						</section>
+						<section>
+							<h3>Java</h3>
+							<p>While taking Higher Level Computer Science in the IB, I have been learning Java for the past year</p>
+							<img src="assets/java.png">
+						</section>
+					</div>
+					<div id="bottom">
+						<section>
+							<h3>Arduino (C/C++)</h3>
+							<p>I learnt Arduino programming for 3 years, and made many physical projects during that time</p>
+							<img src="assets/arduino.png">
+						</section>
+						<section>
+							<h3>Swift</h3>
+							<p>I learnt Swift while developing macOS apps for a service in my school, and continued learning iOS thereafter</p>
+							<img src="assets/swift.png">
+						</section>
+					</div>
+				</div>
+			</div>
+
+			<div class="sect" id="portfolio">
+				<h2>Recent projects</h2>
+				<div id="projects">
+					<div id="proj-top">
+						<section id="covid">
+							<h3>Covid-19 Tracker</h3>
+							<img src="assets/covid.png">
+							<h4>Python / HTML / CSS / Bash</h4>
+							<p>This is a Covid-19 tracker I made at the beginning of the pandemic in Singapore</p>
+							<div class="links">
+								<a href="covid.html">Information</a>
+								<a href="assets/covid/index.html" target="_blank">View</a>
+							</div>
+						</section>
+						<section id="website">
+							<h3>Personal Portfolio</h3>
+							<img src="assets/portfolio.png">
+							<h4>HTML / CSS / Javascript</h4>
+							<p>This website was made from scratch using HTML, CSS and Javascript</p>
+							<div class="links">
+								<a href="portfolio.html">Information</a>
+								<a href="#top-page">View</a>
+							</div>
+						</section>
+						<section id="simulator">
+							<h3>Statistics Grapher</h3>
+							<img src="assets/stats.png">
+							<h4>Python</h4>
+							<p>This is a Chi Squared Test and T Test statistical simulator I made for the math department in my school</p>
+							<div class="links">
+								<a href="statistics.html">Information</a>
+								<a href="https://drive.google.com/file/d/1tipJW35nzaUCqutfxEuWvxSAOTb6ixz0/view?usp=sharing" target="_blank">Download</a>
+							</div>
+						</section>
+					</div>
+					<div id="proj-bottom">
+						<section id="library">
+							<h3>Library Tracker</h3>
+							<img src="assets/library.png">
+							<h4>Java / MySQL</h4>
+							<p>This is a simple project I made which can be used to manage books being checked in and out of a library using a local MySQL database</p>
+							<div class="links">
+								<a href="library.html">Information</a>
+								<a href="https://drive.google.com/file/d/1mLO8mMe6zYAAweG0UKcfTgFRCJ4DkcDV/view?usp=sharing" target="_blank">Download</a>
+							</div>
+						</section>
+						<section id="chess">
+							<h3>Chesh Clock</h3>
+							<img src="assets/chess.png">
+							<h4>Arduino (C / C++)</h4>
+							<p>This hardware project was made from scratch using 12 ICs, 6 micro Arduinos and personally designed custom PCBs</p>
+							<div class="links">
+								<a href="chess.html">Information</a>
+								<a href="https://drive.google.com/file/d/1Pb0W45YwxACmi9keH4uuVowoUYLL7mzc/view?usp=sharing" target="_blank">Download</a>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+
+			<div id="hero2"></div>
+
+			<div class="sect" id="contact">
+				<h2>Get in touch</h2>
+				<div id="form">
+					<section id="image">
+						<img src="assets/contact.png">
+					</section>
+					<section id="text">
+						<form name="contact_form">
+							<div id="first">
+								<input type="text" id="name" name="name" placeholder="Name" required>
+								<input type="email" id="email" name="email" placeholder="Email" required>
+							</div>
+							<div id="second">
+								<textarea id="subject" name="message" placeholder="Say hi!" required></textarea>
+							</div>
+							<div id="third">
+								<button type="submit" id="submit">Submit</button>
+							</div>
+						</form>
+						<p id="overlay"></p>
+
+						<script>
+							const scriptURL = 'https://script.google.com/macros/s/AKfycbxmnr6YFNbXHkq6ZL5i97d41f3EoiAoGLxMqh56sIYE8TJogIdV/exec'
+							const form = document.forms['contact_form']
+
+							form.addEventListener('submit', e => {
+								document.getElementById('overlay').textContent="Sending";
+								document.getElementById('overlay').classList.add("anim");
+								e.preventDefault()
+								fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+								.then(response => {form.reset();
+									document.getElementById('overlay').classList.remove("anim");
+									document.getElementById('overlay').textContent="Sent!";
+									return true})
+								.catch(error => console.error('Error!', error.message))
+							})
+						</script>
+					</section>
+				</div>
+			</div>
+		</main>
+
+	</body>
+</html>
