@@ -213,14 +213,12 @@ main {
 	overflow-y: auto;
 	perspective: 0.5px;
 
-	-webkit-overflow-scrolling: touch;
 	scroll-behavior: smooth;
 }
 
 header {
 	position: relative;
 	height: 100vh;
-	overflow: hidden;
 }
 
 header::after {
