@@ -225,7 +225,7 @@ strong {
 	bottom: -45px;
 
 	color: #2b2d42;
-	font: 400 16px "open sans", Arial, sans-serif;
+	font: 400 12px "open sans", Arial, sans-serif;
 }
 
 .second #button {
@@ -304,6 +304,10 @@ strong {
 
 	.sect p {
 		font-size: 20px;
+	}
+
+	.image figcaption {
+		font-size: 16px;
 	}
 
 }
