@@ -208,8 +208,6 @@ menu button hr {
 }
 
 main {
-	-webkit-overflow-scrolling: touch;
-
 	height: 100vh;
 	overflow-x: hidden;
 	overflow-y: auto;
