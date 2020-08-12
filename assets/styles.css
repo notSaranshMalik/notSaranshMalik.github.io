@@ -208,6 +208,8 @@ menu button hr {
 }
 
 main {
+	-webkit-overflow-scrolling: touch;
+
 	height: 100vh;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -453,7 +455,7 @@ strong {
 	height: 400px;
 	box-shadow: inset 0 0 0 1000px #2b2d4280;
 
-	display: block;
+	display: none;
 }
 
 #form {
@@ -705,6 +707,10 @@ textarea {
 
 	#over-menu {
 		display: none;
+	}
+
+	#hero2 {
+		display: block;
 	}
 
 	input {
