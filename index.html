@@ -16,34 +16,34 @@
 
 	<body id="main-body">
 
-		<main>
-			<nav>
-				<a href="#experience">Experience</a>
-				<a href="#portfolio">Portfolio</a>
-				<a href="#contact">Contact</a>
-			</nav>
-	
-			<menu>
-				<button onclick="animate_func(this)" id="animbutton">
-					<hr id="bar1">
-					<hr id="bar2">
-					<hr id="bar3">
-				</button>
-				<script>
-					function animate_func() {
-						document.getElementById('over-menu').classList.toggle("show-change");
-						document.getElementById('main-body').classList.toggle("flow-body");
-						document.getElementById('animbutton').classList.toggle("change");
-					}
-				</script>
-			</menu>
-	
-			<menu id="over-menu">
-				<a href="#experience" onclick="animate_func()">Experience</a>
-				<a href="#portfolio" onclick="animate_func()">Portfolio</a>
-				<a href="#contact" onclick="animate_func()">Contact</a>
-			</menu>
+		<nav>
+			<a href="#experience">Experience</a>
+			<a href="#portfolio">Portfolio</a>
+			<a href="#contact">Contact</a>
+		</nav>
 
+		<menu>
+			<button onclick="animate_func(this)" id="animbutton">
+				<hr id="bar1">
+				<hr id="bar2">
+				<hr id="bar3">
+			</button>
+			<script>
+				function animate_func() {
+					document.getElementById('over-menu').classList.toggle("show-change");
+					document.getElementById('main-body').classList.toggle("flow-body");
+					document.getElementById('animbutton').classList.toggle("change");
+				}
+			</script>
+		</menu>
+
+		<menu id="over-menu">
+			<a href="#experience" onclick="animate_func()">Experience</a>
+			<a href="#portfolio" onclick="animate_func()">Portfolio</a>
+			<a href="#contact" onclick="animate_func()">Contact</a>
+		</menu>
+
+		<main>
 			<header id="top-page">
 				<div id="intro">
 					<h1>Hello</h1>
