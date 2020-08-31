@@ -75,10 +75,18 @@ html {
 
 	animation: show 2s forwards;
 	opacity: 0;
+	overflow: hidden;
 }
 
 body {
 	height: 100%;
+	overflow: hidden;
+}
+
+section {
+	height: 100vh;
+	overflow: scroll;
+	position: relative;
 }
 
 nav {
@@ -230,6 +238,7 @@ strong {
 
 .second #button {
 	width: 200px;
+	height: 100%;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;

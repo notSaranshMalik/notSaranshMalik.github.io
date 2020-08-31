@@ -75,10 +75,18 @@ html {
 
 	animation: show 2s forwards;
 	opacity: 0;
+	overflow: hidden;
 }
 
 body {
 	height: 100%;
+	overflow: hidden;
+}
+
+section {
+	height: 100vh;
+	overflow: scroll;
+	position: relative;
 }
 
 nav {
@@ -162,7 +170,8 @@ strong {
 
 .sect #button {
     width: 200px;
-    padding: 15px 0 0 15px;
+	padding: 15px 0 15px 15px;
+	height: 100%;
 }
 
 .sect a {
