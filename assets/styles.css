@@ -83,6 +83,16 @@ body {
 	overflow: hidden;
 }
 
+#temp-message {
+	color: #edf2f4;
+	font: 300 15px "open sans", Arial, sans-serif;
+
+	position: fixed;
+	bottom: 30px;
+	left: 30px;
+	z-index: 10;
+}
+
 nav {
 	position: fixed;
 	top: 10px;
@@ -274,7 +284,6 @@ strong {
 
 	opacity: 0;
 	visibility: hidden;
-	animation: show 2s linear 2s forwards, bob 2s ease-in-out 2s 3, hide 2s linear 6s forwards;
 }
 
 #more-info a {
@@ -673,6 +682,10 @@ textarea {
 
 	menu {
 		display: none;
+	}
+
+	#more-info {
+		animation: show 2s linear 2s forwards, bob 2s ease-in-out 2s 3, hide 2s linear 6s forwards;
 	}
 
 	.sect {
