@@ -744,3 +744,11 @@ textarea {
 	}
 
 }
+
+@supports (-webkit-touch-callout: none) {
+	
+	html {
+		height: calc(100vh - 60px)
+	}
+
+}
