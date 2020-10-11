@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Single Pendulum Simulation</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/png" href="../ic.png"/>
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div id="main_sim">
+            <header>
+                <h1>Single Pendulum Simulation</h1>
+            </header>
+            <main>
+                <canvas></canvas>
+            </main>
+            <footer>
+                <div>
+                    <div class="title">
+                        <h2>General adjustments</h2>
+                        <h3 id="period">Period = {}</h3>
+                    </div>
+                    <div>
+                        <p>Length of rope</p>
+                        <p>{} m</p>
+                        <input type="range" id="length" min="0.1" max="10.0" step="0.1" value="0.5">
+                    </div>
+                </div>
+                <div>
+                    <div class="title">
+                        <h2>Air resistance adjustments</h2>
+                        <h3 id="coef">Coefficient = {}</h3>
+                    </div>
+                    <section>
+                        <div>
+                            <p>Radius of bob</p>
+                            <p>{} m</p>
+                            <input type="range" id="radius" min="0.01" max="1.0" step="0.01" value="0.02">
+                        </div>
+                        <div>
+                            <p>Density of bob</p>
+                            <p>{} kg/m^3</p>
+                            <input type="range" id="density_bob" min="100" max="10000" step="100" value="1000">
+                        </div>
+                        <div>
+                            <p>Density of atmosphere</p>
+                            <p>{} kg/m^3</p>
+                            <input type="range" id="density_atm" min="0.1" max="5.0" step="0.1" value="1.2">
+                        </div>
+                        <div>
+                            <p>Drag coefficient</p>
+                            <p>{}</p>
+                            <input type="range" id="drag" min="0.1" max="2.0" step="0.1" value="0.5">
+                        </div>
+                    </section>
+                </div>
+            </footer>
+        </div>
+        <div id="info">
+            <h1>More Information</h1>
+            <p>This single pendulum system was programmed using JavaScript. It uses real values to simulate it, by including regular gravitational force as well as air resistance.</p>
+            <p>This uses a numerical approach by sampling values 60 times per second and updating the graph in real time.</p>
+            <p>Here are the formulae used:</p>
+
+            <p class="formula">Gravitational angular acceleration = field strength × sin(angle) / pendulum length</p>
+            <p class="equation"><em>α = g × sin(a) / l</em></p>
+            <p class="derivation">Here is the derivation:</p>
+            <p class="equation"><em>α = τ × sin(a) / I</em></p>
+            <p class="equation"><em>α = m × g × l × sin(a) / m × l<sup>2</sup></em></p>
+            <p class="equation"><em>α = g × sin(a) / l</em></p>
+
+            <p class="formula">Air resistance angular acceleration = 0.375 × drag coefficient × air density × velocity<sup>2</sup> / (bob density × bob radius × pendulum length</p>
+            <p class="equation"><em>α = 0.375 × C × ρ<sub>air</sub> × v<sup>2</sup>/ (ρ<sub>bob</sub> × r × l)</em></p>
+            <p class="derivation">Here is the derivation:</p>
+            <p class="equation"><em>F = 0.5 × ρ<sub>air</sub> × A × C × v<sup>2</sup></em></p>
+            <p class="equation"><em>m × a = 0.5 × ρ<sub>air</sub> × π × r<sup>2</sup> × C × v<sup>2</sup></em></p>
+            <p class="equation"><em>α × l = 0.5 × ρ<sub>air</sub> × π × r<sup>2</sup> × C × v<sup>2</sup> / m</em></p>
+            <p class="equation"><em>α = 0.5 × ρ<sub>air</sub> × π × r<sup>2</sup> × C × v<sup>2</sup> / ((4/3) × π × r<sup>3</sup> × ρ<sub>bob</sub> × l)</em></p>
+            <p class="equation"><em>α = 0.375 × C × ρ<sub>air</sub> × v<sup>2</sup> / (ρ<sub>bob</sub> × r × l)</em></p>
+            <p>Since the only changing value here is <em>v<sup>2</sup></em>, the rest of the equation can be taken as a constant, as indicated above the sliders</p>
+        </div>
+        <div id="scroll">
+            <a href="#info"><img src="info.png" alt=""></a>
+        </div>
+    </body>
+
+</html>

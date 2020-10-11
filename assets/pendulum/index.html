@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/styles.css">
+        <link rel="icon" type="image/png" href="assets/ic.png"/>
+        <title>Pendulum Systems</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Pendulum Simulations</h1>
+        </header>
+        <section id="choices">
+            <a href="assets/single/index.html">
+                <h2>Single Pendulum Simulation</h2>
+                <img src="assets/single.png" alt="">
+                <p>
+                    This simulation uses a numerical solution to calculate gravitational force, as well as air resistance,
+                    sampled 60 times a second to simulate the movement of a pendulum. The user is able to modify 5 seperate
+                    variables to see how that affects the rate at which the pendulum loses energy due to the resistance.
+                </p>
+                <p>
+                    The formulae that I derived for this simulation are visible below variable sliders, so the user is able
+                    to see the exact way in which the variables are affecting the simulation.
+                </p>
+            </a>
+            <a href="assets/double/index.html">
+                <h2>Double Pendulum Simulation</h2>
+                <img src="assets/double.png" alt="">
+                <p>
+                    This simulation also uses a numerical approach to graphing the pendulum. The equations used are the
+                    general form of the double pendulum equations from Lagrangian mechanics. This simulation is meant to 
+                    demonstrate chaos theory, and as such the user is able to modify the starting angles of the pendulum 
+                    and the length, to show how small changes may drastically change the motion. 
+                </p>
+                <p>
+                    The simulation pauses after 30 seconds due to the fact that numerical solutions get less accurate as time goes
+                    on, and as such the simulation wouldn't mirror reality.
+                </p>
+            </a>
+        </section>
+    </body>
+
+</html>

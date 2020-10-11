@@ -142,6 +142,10 @@ header#chess {
 	background-image: url('chess.png');
 }
 
+header#pendulum {
+	background-image: url('pendulum.png');
+}
+
 #intro {
 	display: flex;
 	flex-flow: column nowrap;

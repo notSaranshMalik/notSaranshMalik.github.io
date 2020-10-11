@@ -1,0 +1,179 @@
+/* 
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#info {
+    padding-bottom: 20px;
+}
+
+#scroll {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+#scroll img {
+    width: 40px;
+}
+
+/* 
+   User Stylesheets
+*/
+
+html {
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+body {
+    font: 300 14px 'Open Sans', sans-serif;
+    text-align: center;
+    height: 100vh;
+}
+
+h1 {
+    font: 300 30px 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h2 {
+    font: 600 16px 'Open Sans', sans-serif;
+}
+
+#main_sim {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header {
+    flex: 1 1 0;
+}
+
+main {
+    flex: 6 1 0;
+}
+
+canvas {
+    display: block;
+}
+
+footer {
+    flex: 1 1 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+
+input[type="range"] {
+    width: 200px;
+}
+
+section {
+    display: flex;
+}
+
+section>* {
+    flex: 1 1 0;
+    padding: 0 20px;
+}
+
+#info {
+    padding: 40px;
+    text-align: left;
+}
+
+@media (max-width: 1400px) {
+
+    h1 {
+        font: 300 20px 'Open Sans', sans-serif;
+        text-align: center;
+    }
+
+    h2 {
+        padding-top: 30px;
+        font: 600 14px 'Open Sans', sans-serif;
+    }
+    
+    #main_sim {
+        display: block;
+    }
+
+    main {
+        height: 70vh;
+    }
+
+    footer {
+        display: block;
+    }
+
+    section {
+        display: block;
+    }
+
+    #scroll {
+        visibility: hidden;
+    }
+}
+
+@media (max-height: 700px) {
+    #main_sim {
+        display: block;
+    }
+
+    main {
+        height: 80vh;
+    }
+
+    #scroll {
+        visibility: hidden;
+    }
+}
