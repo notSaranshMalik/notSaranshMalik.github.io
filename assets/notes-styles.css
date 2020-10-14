@@ -81,7 +81,7 @@ body {
 	height: 100%;
 }
 
-section {
+#main {
 	height: 100vh;
 	overflow: scroll;
 	position: relative;
@@ -152,8 +152,14 @@ header a {
 
 .sect h2 {
 	color: #2b2d42;
-	font: 400 30px "open sans", Arial, sans-serif;
-	padding: 40px 0 15px 15px;
+	font: 400 20px "open sans", Arial, sans-serif;
+	padding: 40px 0 0 15px;
+}
+
+.sect h3 {
+	color: #2b2d42;
+	font: 400 16px "open sans", Arial, sans-serif;
+	padding: 0 0 15px 15px;
 }
 
 .sect p {
@@ -166,10 +172,8 @@ strong {
 	font-weight: 400;
 }
 
-.sect #button {
-    width: 200px;
+#button {
 	padding: 15px 0 15px 15px;
-	height: 100%;
 }
 
 .sect a {
@@ -232,15 +236,39 @@ strong {
 	}
 
 	.sect h2 {
-		font-size: 50px;
+		font-size: 30px;
 	}
 
 	.sect p {
 		font-size: 20px;
 	}
+	
+	.sect {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+	}
 
-	.image figcaption {
-		font-size: 16px;
+	.block {
+		box-sizing: border-box;
+		width: 30%;
+		padding: 20px 20px 80px 20px;
+		margin: 0 0 60px 0;
+		border: 1px solid #abb4c3;
+		border-radius: 20px;
+
+		position: relative;
+	}
+
+	#button {
+		padding: 15px;
+		text-align: center;
+
+		position: absolute;
+		bottom: 20px;
+		left: 0;
+		box-sizing: border-box;
+		width: 100%;
 	}
 
 }
