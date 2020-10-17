@@ -75,6 +75,8 @@ html {
 
 	animation: show 2s forwards;
 	opacity: 0;
+
+	background-color: #edf2f4;
 }
 
 body {
@@ -128,7 +130,7 @@ menu {
 	top: 20px;
 	right: 20px;
 
-	z-index: 10;
+	z-index: 20;
 }
 
 menu button {
@@ -157,19 +159,6 @@ menu button hr {
 	transition: 0.4s;
 }
 
-.change #bar1 {
-	transform: translate(0px, 8px) rotate(225deg);
-}
-  
-.change #bar2 {
-	transform: rotate(180deg);
-	opacity: 0;
-}
-  
-.change #bar3 {
-	transform: translate(0px, -8px) rotate(135deg);
-}
-
 #over-menu {
 	display: flex;
 	flex-flow: column nowrap;
@@ -186,12 +175,7 @@ menu button hr {
 	transition: 0.4s;
 	visibility: hidden;
 	opacity: 0;
-}
 
-#over-menu.show-change {
-	visibility: visible;
-	opacity: 1;
-	z-index: 5;
 	background-color: #46496b;
 }
 
@@ -215,36 +199,14 @@ menu button hr {
 	overflow: hidden;
 }
 
-main {
-	height: 100vh;
-	overflow-x: hidden;
-	overflow-y: auto;
-	perspective: 0.5px;
-
-	scroll-behavior: smooth;
-}
-
 header {
-	position: relative;
 	height: 100vh;
-}
-
-header::after {
-	content: " ";
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-
-	transform: translateZ(-1px) scale(3); /* scale = (perspective — distance) / perspective */
-	z-index: -1;
 
 	background-image: url('hero.jpg');
-	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
 	box-shadow: inset 0 0 0 1000px #2b2d4280;
+	background-attachment: fixed;
 }
 
 #intro {
@@ -261,7 +223,7 @@ header::after {
 header h1 {
 	color: #edf2f4;
 	font: 300 40px "open sans", Arial, sans-serif;
-	border-bottom: 1px solid #edf2f4;
+	border-bottom: 2px solid #edf2f4;
 }
 
 header h2 {
@@ -324,7 +286,6 @@ strong {
 	color: #edf2f4;
 	font: 300 30px "open sans", Arial, sans-serif;
 	text-align: center;
-
 	padding-bottom: 20px;
 }
 
@@ -351,10 +312,15 @@ strong {
 	border-radius: 50%;
 	padding: 5px;
 	border: 3px solid #edf2f4;
+	box-sizing: content-box;
 
 	height: 80px;
+	width: 80px;
 	position: absolute;
-	left: calc(50% - 40px);
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
 	bottom: -50px;
 }
 
@@ -368,7 +334,6 @@ strong {
 	color: #edf2f4;
 	font: 300 30px "open sans", Arial, sans-serif;
 	text-align: center;
-
 	padding-bottom: 20px;
 }
 
@@ -376,7 +341,6 @@ strong {
 	color: #edf2f4;
 	font: 400 20px "open sans", Arial, sans-serif;
 	text-align: center;
-
 	padding-top: 20px;
 	flex: 0 0 auto;
 }
@@ -386,7 +350,6 @@ strong {
 	font: 300 16px "open sans", Arial, sans-serif;
 	text-align: center;
 	padding: 20px 20px 70px 20px;
-
 	flex: 0 0 auto;
 }
 
@@ -427,11 +390,6 @@ strong {
 	border-radius: 15px;
 }
 
-.info {
-	display: flex;
-	flex-flow: column nowrap;
-}
-
 .links {
 	display: flex;
 	flex-flow: row nowrap;
@@ -445,10 +403,6 @@ strong {
 	left: 10%;
 	height: 70px;
 	bottom: 10px;
-}
-
-.hidden {
-	display: none;
 }
 
 #hero2 {
@@ -581,10 +535,6 @@ textarea {
 	color: #edf2f4;
 
 	animation: hide 0.5s 2s forwards;
-}
-
-#overlay.anim {
-	animation: show 0.5s forwards;
 }
 
 /*

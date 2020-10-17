@@ -24,45 +24,41 @@
 
 	<body>
 		
-		<section>
-			<nav>
-				<a href="index.html">&lt; Back</a>
-			</nav>
-	
-			<header id="covid">
-				<div id="intro">
-					<a href="assets/covid/index.html"><h1>Covid-19 Tracker</h1></a>
-				</div>
-			</header>
-	
-			<div class="sect">
-				<div class="main">
-					<div class="first">
-						<h2>The project</h2>
-						<p>This project was made in 2020 during the Coronavirus pandemic in Singapore, as a way to track cases both regularly and by using science to measure the rate of exponentiation.</p>
-						<p>It includes 4 interactive graphs - 2 measuring the total cases till that day, as well as the new cases on that day, and the other 2 measuring the exponential nature of the spread.</p>
-						<p>The exponential graphs plot the new cases against the total number of cases, as that is the way exponential growth is modelled by differential equations. Being below any given straight line indicates the growth is no longer exponential.</p>
-	
-						<h2>The tools</h2>
-						<p>The data used was pulled straight off the Government of Singapore's website, and parsed using <strong>Python</strong> and <strong>CSS</strong> modules</p>
-						<p>The data was then normalised using <strong>Numpy</strong> and <strong>Pandas</strong> to form suitable models</p>
-						<p>The graphed models themselves were written with <strong>Plotly</strong>, then embedded into an <strong>HTML / CSS</strong> based window</p>
-						<p>The data was updated daily based on the Government of Singapore's news briefings, using a <strong>Bash</strong> script</p>
-					</div>
-					<div class="second">
-						<figure class="image">
-							<img src="assets/covid.png">
-							<figcaption>The main page</figcaption>
-						</figure>
-						<figure class="image">
-							<img src="assets/exp.png">
-							<figcaption>The exponential model</figcaption>
-						</figure>
-						<a href="assets/covid/index.html"><section id="button">Visit</section></a>
-					</div>
-				</div>
+		<nav>
+			<a href="/">&lt; Back</a>
+		</nav>
+
+		<header id="covid">
+			<div id="intro">
+				<a href="tracker/"><h1>Covid-19 Tracker</h1></a>
 			</div>
-		</section>
+		</header>
+
+		<div class="sect">
+			<div class="first">
+				<h2>The project</h2>
+				<p>This project was made in 2020 during the Coronavirus pandemic in Singapore, as a way to track cases both regularly and by using science to measure the rate of exponentiation.</p>
+				<p>It includes 4 interactive graphs - 2 measuring the total cases till that day, as well as the new cases on that day, and the other 2 measuring the exponential nature of the spread.</p>
+				<p>The exponential graphs plot the new cases against the total number of cases, as that is the way exponential growth is modelled by differential equations. Being below any given straight line indicates the growth is no longer exponential.</p>
+
+				<h2>The tools</h2>
+				<p>The data used was pulled straight off the Government of Singapore's website, and parsed using <strong>Python</strong> and <strong>CSS</strong> modules</p>
+				<p>The data was then normalised using <strong>Numpy</strong> and <strong>Pandas</strong> to form suitable models</p>
+				<p>The graphed models themselves were written with <strong>Plotly</strong>, then embedded into an <strong>HTML / CSS</strong> based window</p>
+				<p>The data was updated daily based on the Government of Singapore's news briefings, using a <strong>Bash</strong> script</p>
+			</div>
+			<div class="second">
+				<figure class="image">
+					<img src="assets/covid.png">
+					<figcaption>The main page</figcaption>
+				</figure>
+				<figure class="image">
+					<img src="assets/exp.png">
+					<figcaption>The exponential model</figcaption>
+				</figure>
+				<a href="tracker/"><section id="button">Visit</section></a>
+			</div>
+		</div>
 
 	</body>
 

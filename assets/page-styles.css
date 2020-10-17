@@ -75,16 +75,12 @@ html {
 
 	animation: show 2s forwards;
 	opacity: 0;
+
+	background-color: #edf2f4;
 }
 
 body {
 	height: 100%;
-}
-
-section {
-	height: 100vh;
-	overflow: scroll;
-	position: relative;
 }
 
 nav {
@@ -182,7 +178,7 @@ header a {
 	padding: 0 0 15px 15px;
 }
 
-.sect .main {
+.sect {
 	display: block;
 }
 
@@ -309,7 +305,7 @@ strong {
 		font-size: 50px;
 	}
 
-	.sect .main {
+	.sect {
 		display: flex;
 	}
 
