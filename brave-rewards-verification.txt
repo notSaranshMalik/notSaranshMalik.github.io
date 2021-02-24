@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: saranshmalik.xyz
+Token: 658bd311ce70934df7247ff5d608e7aef90968a9b2f7dc6e3e0377ef841427dd
